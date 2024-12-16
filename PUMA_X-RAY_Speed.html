@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px; 
+        }
+        .product-details {
+            display: flex;
+            flex-direction: row; 
+            max-width: 800px; 
+            background-color: #f0f0f0; 
+            border-radius: 8px;
+            overflow: hidden; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            flex: 1; 
+            max-width: 100%; 
+            height: auto; 
+            object-fit: cover; 
+        }
+        .product-info {
+            flex: 2; 
+            padding: 20px; 
+            text-align: left; 
+        }
+        .product-info h1, .product-info h3, .product-info p, .product-info div {
+            margin-bottom: 10px; 
+        }
+        .product-info button {
+            margin-top: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-details">
+            <img class="product-image" src="image\PUMA\2.jpg" alt="Product Image">
+            <div class="product-info">
+                <h1>PUMA X-RAY Speed</h1>
+                <h3>Price: ₹ 5 999.00</h3>
+                <p>Unisex sneakers</p>
+                <div>
+                    <p><span>Availability:</span> In Stock</p>
+                    <p><span>Size:</span> 
+                        <select id="qty">
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                        </select>
+                    </p>
+                </div>
+                <button type="button">Add to cart</button>
+                <button type="button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
